@@ -1,0 +1,10 @@
+/Users/aleksei_lazarev/RiderProjects/Video-api/Video-api/bin/Release/netcoreapp2.0/Video-api.deps.json
+/Users/aleksei_lazarev/RiderProjects/Video-api/Video-api/bin/Release/netcoreapp2.0/Video-api.runtimeconfig.json
+/Users/aleksei_lazarev/RiderProjects/Video-api/Video-api/bin/Release/netcoreapp2.0/Video-api.runtimeconfig.dev.json
+/Users/aleksei_lazarev/RiderProjects/Video-api/Video-api/bin/Release/netcoreapp2.0/Video-api.dll
+/Users/aleksei_lazarev/RiderProjects/Video-api/Video-api/bin/Release/netcoreapp2.0/Video-api.pdb
+/Users/aleksei_lazarev/RiderProjects/Video-api/Video-api/obj/Release/netcoreapp2.0/Video-api.csproj.CoreCompileInputs.cache
+/Users/aleksei_lazarev/RiderProjects/Video-api/Video-api/obj/Release/netcoreapp2.0/Video-api.AssemblyInfoInputs.cache
+/Users/aleksei_lazarev/RiderProjects/Video-api/Video-api/obj/Release/netcoreapp2.0/Video-api.AssemblyInfo.cs
+/Users/aleksei_lazarev/RiderProjects/Video-api/Video-api/obj/Release/netcoreapp2.0/Video-api.dll
+/Users/aleksei_lazarev/RiderProjects/Video-api/Video-api/obj/Release/netcoreapp2.0/Video-api.pdb
