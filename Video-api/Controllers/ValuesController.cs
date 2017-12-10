@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace Video_api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api")]
     public class ValuesController : Controller
     {
         // GET api/values
@@ -15,12 +15,12 @@ namespace Video_api.Controllers
         {
             return new string[] {"value1", "value2"};
         }
-
-        // GET api/values/5
-        [HttpGet("{id}")]
+         
+        // GET api/films
+        [HttpGet("films")]
         public string Get(int id)
         {
-            return "Hello Sasha";
+            return JsonConvert.SerializeObject(Storage.getInstance().films);
         }
 
         // POST api/values
