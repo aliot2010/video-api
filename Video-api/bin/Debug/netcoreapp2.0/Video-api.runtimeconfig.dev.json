@@ -2,7 +2,8 @@
   "runtimeOptions": {
     "additionalProbingPaths": [
       "/Users/aleksei_lazarev/.dotnet/store/|arch|/|tfm|",
-      "/Users/aleksei_lazarev/.nuget/packages"
+      "/Users/aleksei_lazarev/.nuget/packages",
+      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
     ]
   }
 }

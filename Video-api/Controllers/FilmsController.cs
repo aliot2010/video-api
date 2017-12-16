@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 namespace Video_api.Controllers
 {
     [Route("api")]
-    public class ValuesController : Controller
+    public class FilmsController : Controller
     {
         // GET api/values
         [HttpGet]
@@ -24,13 +24,13 @@ namespace Video_api.Controllers
         }
 
         // POST api/values
-        [HttpPost]
+        [HttpPost("films")]
         public void Post([FromBody] string value)
         {
         }
 
         // PUT api/values/5
-        [HttpPut("{id}")]
+        [HttpPut("films/{id}")]
         public void Put(int id, [FromBody] string value)
         {
         }

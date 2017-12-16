@@ -36,15 +36,27 @@ namespace Video_api
             film.title = "My first pain";
             film.yearOfIssue = 2017;
             
+            var film1 = new Film();
+            film1.id = 1;
+            film1.actors = "Jim Jim, Jim Jim";
+            film1.ageLimit = 12;
+            film1.country = "Belarus";
+            film1.producer = "Alexei Lazarev";
+            film1.summory = "Summory Summory Summory Summory Summory Summory";
+            film1.title = "MU MU ";
+            film1.yearOfIssue = 2013;
+            
             var category = new Category();
             category.id = 0;
             category.nameOfCategory = "Adventure";
-            category.categoryCode = category.nameOfCategory.Substring(0, 2);
+            category.categoryCode = category.nameOfCategory.Substring(0, 3);
             
             categorys.Add(category);
                 
             film.cathegory = category;
+            film1.cathegory = category;
             
+            films.Add(film);
             films.Add(film);
             
             var medium1 = new Medium();
@@ -71,7 +83,7 @@ namespace Video_api
             
             film.copiesIds.Add(medium1.id);
             film.copiesIds.Add(medium2.id);
-            film.copiesIds.Add(medium3.id);
+            film1.copiesIds.Add(medium3.id);
             
             
             var lease = new Lease();
@@ -81,7 +93,15 @@ namespace Video_api
             
             leases.Add(lease);
             
+            var lease1 = new Lease();
+            lease1.id = 1;
+            lease1.dateOfIssue = new DateTime();
+            lease1.medium = medium1;
+            
+            leases.Add(lease1);
+            
             var client1 = new Client();
+            var client2 = new Client();
 
             client1.id = 0;
             client1.firstName = "Oleg";
@@ -91,7 +111,17 @@ namespace Video_api
             client1.registrationDate = new  DateTime();
             client1.sex = "man";
             
+            client2.id = 1;
+            client2.firstName = "Anton";
+            client2.sername = "Check";
+            client2.leases.Add(lease1);
+            client2.age = 19;
+            client2.registrationDate = new  DateTime();
+            client2.sex = "man";
+            
+            
             clients.Add(client1);
+            clients.Add(client2);
         }
         
         
