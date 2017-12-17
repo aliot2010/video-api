@@ -17,17 +17,17 @@ namespace Video_api.Controllers
         }
          
         // GET api/films
-        [HttpGet("films")]
-        public string Get(int id)
-        {
-            return JsonConvert.SerializeObject(Storage.getInstance().films);
-        }
+//        [HttpGet("films")]
+//        public string Get(int id)
+//        {
+//            return JsonConvert.SerializeObject(Storage.getInstance().films);
+//        }
 
         // POST api/values
-        [HttpPost("films")]
-        public void Post([FromBody] string value)
-        {
-        }
+//        [HttpPost("films")]
+//        public void Post([FromBody] string value)
+//        {
+//        }
 
         // PUT api/values/5
         [HttpPut("films/{id}")]

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.WindowsAzure.Storage.Blob.Protocol;
 
 namespace Video_api
 {
@@ -57,7 +58,7 @@ namespace Video_api
             film1.cathegory = category;
             
             films.Add(film);
-            films.Add(film);
+            films.Add(film1);
             
             var medium1 = new Medium();
             medium1.film = film;
@@ -123,8 +124,54 @@ namespace Video_api
             clients.Add(client1);
             clients.Add(client2);
         }
+
+        public Film getFilmById(int id)
+        {
+            foreach (var film in films)
+            {
+                if (film.id == id)
+                {
+                    return film;
+                }
+            }
+
+            return null;
+        } 
         
+        public void setFilmById(int id, Film film)
+        {
+            for (int i = 0; i < films.Count; i++)
+            {
+                if (films[i].id == id)
+                {
+                    films[i] = film;
+                }
+            }
+        } 
         
+        public Client getClientById(int id)
+        {
+            foreach (var client in clients)
+            {
+                if (client.id == id)
+                {
+                    return client;
+                }
+            }
+
+            return null;
+        } 
+        
+        public void setClientById(int id, Client client)
+        {
+            for (int i = 0; i < clients.Count; i++)
+            {
+                if (clients[i].id == id)
+                {
+                    clients[i] = client;
+                }
+            }
+        } 
          
         public List<Film> films { get; set;}
         public List<Client> clients { get; set;}
