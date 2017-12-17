@@ -6,25 +6,25 @@ using Newtonsoft.Json;
 
 namespace Video_api.Controllers
 {
-    [Route("api")]
+    [Route("api/films")]
     public class FilmController : Controller
     {
         // GET api/values
-        [HttpGet("films")]
+        [HttpGet]
         public string Get()
         {
             return JsonConvert.SerializeObject(Storage.getInstance().films);
         }
          
         // GET api/films
-        [HttpGet("films/{id}")]
+        [HttpGet("{id}")]
         public string Get(int id)
         {
             return JsonConvert.SerializeObject(Storage.getInstance().getFilmById(id));
         }
 
         // POST api/values
-        [HttpPost("films")]
+        [HttpPost]
         public string Post([FromBody] Film film)
         {
             if (film == null)
@@ -39,7 +39,7 @@ namespace Video_api.Controllers
         }
 
         // PUT api/values/5
-        [HttpPut("films/{id}")]
+        [HttpPut("{id}")]
         public string Put(int id, [FromBody] Film film)
         {
             if (film == null)

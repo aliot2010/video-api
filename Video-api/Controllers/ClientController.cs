@@ -10,6 +10,13 @@ namespace Video_api.Controllers
     public class ClientController : Controller
     {
 
+        [HttpGet]
+        public string Get()
+        {
+            return JsonConvert.SerializeObject(Storage.getInstance().clients);
+        }
+        
+        
         // GET api/clients/0
         [HttpGet("{id}")]
         public string Get(int id)
