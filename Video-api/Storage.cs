@@ -149,6 +149,30 @@ namespace Video_api
             }
         } 
         
+        public Category getCategoryById(int id)
+        {
+            foreach (var category in categorys)
+            {
+                if (category.id == id)
+                {
+                    return category;
+                }
+            }
+
+            return null;
+        } 
+        
+        public void setCategoryById(int id, Category category)
+        {
+            for (int i = 0; i < categorys.Count; i++)
+            {
+                if (categorys[i].id == id)
+                {
+                    categorys[i] = category;
+                }
+            }
+        } 
+        
         public Client getClientById(int id)
         {
             foreach (var client in clients)
