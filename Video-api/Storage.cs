@@ -196,6 +196,30 @@ namespace Video_api
                 }
             }
         } 
+        
+        public Medium getMediumById(int id)
+        {
+            foreach (var medium in mediums)
+            {
+                if (medium.id == id)
+                {
+                    return medium;
+                }
+            }
+
+            return null;
+        } 
+        
+        public void setMediumById(int id, Medium medium)
+        {
+            for (int i = 0; i < mediums.Count; i++)
+            {
+                if (mediums[i].id == id)
+                {
+                    mediums[i] = medium;
+                }
+            }
+        } 
          
         public List<Film> films { get; set;}
         public List<Client> clients { get; set;}

@@ -38,7 +38,6 @@ namespace Video_api.Controllers
             Storage.getInstance().clients.Add(client);
 
             return JsonConvert.SerializeObject(client);
-
         }
 
         // PUT api/values/5
